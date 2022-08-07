@@ -21,21 +21,21 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Build-Macos
-          run: GOOS=darwin GOARCH=amd64 go build -o ./dist/gofound_macos_amd64
+        run: GOOS=darwin GOARCH=amd64 go build -o ./dist/gofound_macos_amd64
       - name: Build-Macos-Arm64
-          run: GOOS=darwin GOARCH=arm64 go build -o ./dist/gofound_macos_apple_silicon
+        run: GOOS=darwin GOARCH=arm64 go build -o ./dist/gofound_macos_apple_silicon
 
       - name: Build-Windows-x64
-          run: GOOS=windows GOARCH=amd64 go build -o ./dist/gofound_windows_amd64.exe
+        run: GOOS=windows GOARCH=amd64 go build -o ./dist/gofound_windows_amd64.exe
 
       - name: Build-Windows-AMR64
-          run: GOOS=windows GOARCH=arm64 go build -o ./dist/gofound_windows_arm64.exe
+        run: GOOS=windows GOARCH=arm64 go build -o ./dist/gofound_windows_arm64.exe
 
       - name: Build-Linux-x64
-          run: GOOS=linux GOARCH=amd64 go build -o ./dist/gofound_linux_amd64
+        run: GOOS=linux GOARCH=amd64 go build -o ./dist/gofound_linux_amd64
 
       - name: Build-Linux-AMR64
-          run: GOOS=linux GOARCH=arm64 go build -o ./dist/gofound_linux_arm64
+        run: GOOS=linux GOARCH=arm64 go build -o ./dist/gofound_linux_arm64
 
 
 
